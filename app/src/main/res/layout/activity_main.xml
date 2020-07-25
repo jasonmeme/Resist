@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    android:background="@color/backgroundpink"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="117dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="-35dp"
+        android:src="@drawable/tree" />
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="118dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="-10dp"
+        android:src="@drawable/circuitboard" />
+
+    <ImageView
+        android:layout_width="277dp"
+        android:layout_height="257dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="-100dp"
+        android:src="@drawable/first_vector" />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="109dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="-5dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/second_vector" />
+
+    <ImageView
+        android:id="@+id/girl"
+        android:layout_width="367dp"
+        android:layout_height="260dp"
+        android:layout_above="@id/resist"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/girl" />
+
+    <ImageView
+        android:id="@+id/resist"
+        android:layout_width="268dp"
+        android:layout_height="204dp"
+        android:layout_above="@id/login"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/resist_text" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/textView2"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="-177dp"
+        android:layout_marginBottom="76dp"
+        android:fontFamily="@font/montserrat"
+        android:text="Don't have an account? "
+        android:textColor="#E36C6C"
+        android:textStyle="bold"
+        android:typeface="normal" />
+
+    <ImageView
+        android:id="@+id/login"
+        android:layout_width="260dp"
+        android:layout_height="73dp"
+        android:layout_alignBottom="@id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:onClick="login"
+        android:scaleType="fitCenter"
+        android:src="@drawable/button_1"
+        tools:layout_editor_absoluteX="71dp"
+        tools:layout_editor_absoluteY="581dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="265dp"
+        android:layout_marginBottom="76dp"
+        android:fontFamily="@font/montserrat"
+        android:onClick="sign"
+        android:text="Sign Up"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="261dp"
+        tools:layout_editor_absoluteY="665dp" />
+
+
+</RelativeLayout>
