@@ -55,6 +55,7 @@
         android:fontFamily="@font/lato_thin"
         android:paddingTop="10px"
         android:text="zhu.jason14@gmail.com"
+        android:inputType="text"
         android:textColor="#000000"
         android:textSize="20dp" />
 
@@ -129,6 +130,7 @@
         android:fontFamily="@font/lato_thin"
         android:paddingTop="10px"
         android:text="Password"
+        android:inputType="text"
         android:textColor="#000000"
         android:textSize="20dp" />
 

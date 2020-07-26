@@ -1,9 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/backgroundpink"
     tools:context=".Profile">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:id="@+id/nav_bar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/layout_bg" />
+
+    <ImageView
+        android:id="@+id/home_icon"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:onClick="goMap"
+        android:layout_marginLeft="300px"
+        android:layout_marginBottom="25px"
+        android:src="@drawable/home_unhighlighted" />
+
+    <ImageView
+        android:id="@+id/settings"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="300px"
+        android:layout_marginBottom="35px"
+        android:src="@drawable/settings_highlighted" />
+
+    <ImageView
+        android:id="@+id/top_profile_jason"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/top_profile" />
+
+    <ImageView
+        android:id="@+id/profile_jason"
+        android:layout_width="350dp"
+        android:layout_height="500dp"
+        android:layout_above="@id/nav_bar"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/profile_whole" />
+
+
+
+</RelativeLayout>
