@@ -4,7 +4,133 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_alignParentBottom="false"
     android:background="@color/backgroundpink"
     tools:context=".Login">
+
+    <ImageView
+        android:id="@+id/top_icons"
+        android:layout_width="350dp"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/top" />
+
+    <ImageView
+        android:id="@+id/back_button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="50px"
+        android:layout_marginTop="50px"
+        android:onClick="goBack"
+        android:src="@drawable/back" />
+
+    <ImageView
+        android:id="@+id/mission_icons"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@id/top_icons"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/mission" />
+
+    <ImageView
+        android:id="@+id/sign_in_button"
+        android:layout_width="300dp"
+        android:layout_height="98dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:onClick="logIn"
+        android:src="@drawable/sign_in" />
+
+    <EditText
+        android:id="@+id/text_input"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_above="@id/line_horizontal2"
+        android:layout_marginLeft="10px"
+        android:layout_marginBottom="-25px"
+        android:layout_toRightOf="@id/email_icon"
+        android:fontFamily="@font/lato_thin"
+        android:paddingTop="10px"
+        android:text="zhu.jason14@gmail.com"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/email_text"
+        android:layout_width="60dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/mission_icons"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/lato_thin"
+        android:text="Email"
+        android:textColor="#000000" />
+
+    <ImageView
+        android:id="@+id/email_icon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/email_text"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10px"
+        android:src="@drawable/email" />
+
+    <ImageView
+        android:id="@+id/line_horizontal2"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/email_icon"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="15px"
+        android:layout_marginRight="40dp"
+        android:background="@color/darkpink" />
+
+    <TextView
+        android:id="@+id/password_text"
+        android:layout_width="60dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/line_horizontal2"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/lato_thin"
+        android:text="Password"
+        android:textColor="#000000" />
+
+    <ImageView
+        android:id="@+id/password_key"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/password_text"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10px"
+        android:src="@drawable/password" />
+
+    <ImageView
+        android:id="@+id/line_horizontal4"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/password_key"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="15px"
+        android:layout_marginRight="40dp"
+        android:background="@color/darkpink" />
+
+    <EditText
+        android:id="@+id/text_input4"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_above="@id/line_horizontal4"
+        android:layout_marginLeft="10px"
+        android:layout_marginBottom="-25px"
+        android:layout_toRightOf="@id/password_key"
+        android:fontFamily="@font/lato_thin"
+        android:paddingTop="10px"
+        android:text="Password"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
 
 </RelativeLayout>
